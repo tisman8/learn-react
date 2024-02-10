@@ -12,11 +12,20 @@ export const recipes = [{
   ingredients: new Set(['chickpeas', 'olive oil', 'garlic cloves', 'lemon', 'tahini'])
 }];
 
+function IngredientList() {
+  const listItems = recipes.map(recipe =>
+    <li key={recipe.id}>
+      {Array.from(recipe.ingredients).join(", ")}
+    </li>
+  );
+  return <ul>{listItems}</ul>;
+}
+
 export default function RecipeList() {
   return (
     <div>
       <h1>Recipes</h1>
-      {}
+      {IngredientList()}
     </div>
   );
 }
