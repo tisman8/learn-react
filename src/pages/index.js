@@ -7,6 +7,8 @@ import MyComp from './qcomps/firstcomp'
 import Bio from './qcomps/bios'
 import TodoList from './qcomps/todos'
 import Gallery from './qcomps/gallery_props'
+import Holder from './components/square'
+import PackingList from './qcomps/props_item'
 
 export default function Home() {
   return (
@@ -14,8 +16,10 @@ export default function Home() {
         <Profile />
         <MyComp />
         <Bio />
-        <TodoList />
+        <PackingList />
+        {/* <TodoList />
         <Gallery />
+        <Holder /> */}
     </div>
   )
 }
