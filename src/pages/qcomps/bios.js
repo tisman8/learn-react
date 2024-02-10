@@ -1,6 +1,6 @@
 export default function Bio() {
   return (
-    <div class="component">
+    <div className="component">
       <div class="intro">
         <h1>Welcome to my website!</h1>
       </div>
